@@ -1708,6 +1708,11 @@ section {
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    gap: 15px;
+    /* Adjust gap for smaller header width */
+  }
+
   .nav-links {
     display: none;
   }
@@ -1734,11 +1739,30 @@ section {
 
   .hero-stats {
     gap: 20px;
+    flex-wrap: wrap;
+    /* Allow stats to wrap when space is tight */
+    justify-content: center;
+    /* Center stats on mobile */
+  }
+
+  .stat {
+    text-align: center;
+    /* Center-align stat text */
   }
 
   .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
+    /* Stack primary and secondary buttons vertically */
+    align-items: stretch;
+    /* Make buttons full-width */
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    justify-content: center;
+    /* Center content within buttons */
   }
 
   .footer-content {
@@ -1761,24 +1785,72 @@ section {
 
   .timeline-date {
     position: static;
-    margin-bottom: 4px;
+    /* Remove absolute positioning for stacking */
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    color: var(--accent);
+    /* Enhance visibility on mobile */
   }
 
   .timeline-card {
     margin-top: 0;
+    flex-direction: column;
+    /* Stack logo and text vertically */
+    gap: 15px;
+    padding: 20px;
   }
 
-  .blog-grid {
-    grid-template-columns: 1fr;
+  .timeline-company-logo {
+    width: 50px;
+    /* Resize logo for mobile layout */
+    height: 50px;
   }
 }
 
 @media (max-width: 480px) {
   section {
-    padding: 70px 0;
+    padding: 60px 0;
+    /* Tighter padding for mobile screens */
   }
 
   .hero-title {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+    /* Scaled down headline */
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    /* Balanced subtitle size */
+  }
+
+  .stat-divider {
+    display: none;
+    /* Hide vertical dividers on mobile */
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout for stats */
+    gap: 24px;
+    width: 100%;
+  }
+
+  .stat-num {
+    font-size: 1.8rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-badge {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
