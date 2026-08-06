@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juboraj Ahmed | Systems Builder &amp; AI Researcher</title>
+    <title>Juboraj Ahmed | Trustworthy AI and Machine Learning Research</title>
     <meta name="description"
-        content="Computer Science student focused on machine learning systems, distributed training, and AI deployment architecture. Building intelligent solutions that bridge the gap between research and real-world application." />
+        content="Juboraj Ahmed is a Computer Science and Engineering graduate from BRAC University working on trustworthy AI, federated learning, medical vision-language models, LLM security, and deployable machine learning systems." />
     <meta name="keywords"
-        content="Juboraj Ahmed, AI systems, backend architecture, federated learning, distributed learning, BRAC University" />
-    <meta property="og:title" content="Juboraj Ahmed | AI Systems &amp; Backend Engineer" />
-    <meta property="og:description" content="Building scalable AI systems for real-world deployment." />
+        content="Juboraj Ahmed, trustworthy AI, federated learning, vision-language models, medical AI, LLM security, machine learning, BRAC University, AI research, deep learning" />
+    <meta property="og:title" content="Juboraj Ahmed | Trustworthy AI and Machine Learning Research" />
+    <meta property="og:description"
+        content="Computer Science and Engineering Graduate and AI Researcher exploring trustworthy AI, federated learning, and LLM security." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://juboraj-ahmed.github.io/JuborajAhmed/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,921 +25,1050 @@
 <body>
 
     <!-- Loader -->
-    <div id="loader">
+    <div id="loader" role="status" aria-label="Page loading">
         <div class="loader-inner">
             <div class="loader-bar"></div>
             <span class="loader-text">Loading</span>
         </div>
     </div>
 
-    <!-- Cursor -->
-    <div id="cursor"></div>
-    <div id="cursor-follower"></div>
+    <!-- Cursor (desktop-only decorative element) -->
+    <div id="cursor" aria-hidden="true"></div>
+    <div id="cursor-follower" aria-hidden="true"></div>
 
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">JA<span class="accent">.</span></a>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#blog" class="nav-link">Writings</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="theme-toggle" aria-label="Toggle theme">
-                    <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5" />
-                        <line x1="12" y1="1" x2="12" y2="3" />
-                        <line x1="12" y1="21" x2="12" y2="23" />
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-                        <line x1="1" y1="12" x2="3" y2="12" />
-                        <line x1="21" y1="12" x2="23" y2="12" />
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-                    </svg>
-                    <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                    </svg>
-                </button>
-                <button class="btn-hire"
-                    onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Collaborate</button>
-                <button class="hamburger" id="hamburger" aria-label="Open menu">
-                    <span></span><span></span><span></span>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobile-menu">
-            <ul>
-                <li><a href="#about" class="mobile-link">About</a></li>
-                <li><a href="#projects" class="mobile-link">Projects</a></li>
-                <li><a href="#education" class="mobile-link">Education</a></li>
-                <li><a href="#blog" class="mobile-link">Writings</a></li>
-                <li><a href="#contact" class="mobile-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <canvas id="hero-canvas"></canvas>
-        <div class="hero-content">
-            <div class="hero-badge reveal">
-                <span class="badge-dot"></span>
-                Open to Research Opportunities
-            </div>
-            <h1 class="hero-title reveal">
-                <span class="title-line">Building Scalable AI</span>
-                <span class="title-line">Systems For Real-World</span>
-                <span class="title-line accent-text">Deployment.</span>
-            </h1>
-            <p class="hero-subtitle reveal">
-                Hi, I’m Juboraj Ahmed — a Computer Science student focused on machine learning systems, distributed
-                training, and AI deployment architecture.
-            </p>
-            <div class="hero-actions reveal">
-                <a href="#projects" class="btn-primary">View My Work
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <polyline points="12 5 19 12 12 19" />
-                    </svg>
-                </a>
-                <a href="#contact" class="btn-secondary">Get In Touch</a>
-            </div>
-            <div class="hero-stats reveal">
-                <div class="stat"><span class="stat-num" data-target="15">0</span><span>+</span>
-                    <p>Research Projects</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-num" data-target="4">0</span><span></span>
-                    <p>Focus Areas</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat"><span class="stat-num" data-target="1">0</span><span></span>
-                    <p>Research Thesis</p>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">About Me</span>
-                <h2>Architecting systems that <span class="accent-text">think, scale,</span> and solve complex problems
-                </h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-visual reveal">
-                    <div class="avatar-wrapper">
-                        <div class="avatar-bg"></div>
-                        <div class="avatar-image">
-                            <img src="assets/photo.jpg" alt="Juboraj Ahmed"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="display:none;">
-                                <defs>
-                                    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#6366f1" />
-                                        <stop offset="100%" style="stop-color:#8b5cf6" />
-                                    </linearGradient>
-                                </defs>
-                                <circle cx="100" cy="100" r="100" fill="url(#avatarGrad)" />
-                                <circle cx="100" cy="80" r="35" fill="rgba(255,255,255,0.9)" />
-                                <ellipse cx="100" cy="160" rx="55" ry="45" fill="rgba(255,255,255,0.9)" />
-                            </svg>
-                        </div>
-                        <div class="avatar-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg>
-                            Academic Focus
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content reveal">
-                    <p class="about-bio">My interests lie in designing machine learning systems that move beyond
-                        experimentation into real-world deployment. I am particularly interested in <strong>distributed
-                            learning</strong>, <strong>system optimization</strong>, and bridging AI research with
-                        scalable backend infrastructure.</p>
-                    <p class="about-bio">Through my research in <strong>Remote Patient Health Monitoring
-                            System</strong>, I develop
-                        systems that leverage decentralized data to improve healthcare outcomes without compromising
-                        user privacy.</p>
-                    <p class="about-bio">I am currently building toward a future where <strong>scalable AI
-                            deployment</strong> is seamless, focusing on high-performance inference and robust system
-                        architectures.</p>
-
-                    <div class="exploring-section reveal"
-                        style="margin-top: 32px; border-top: 1px solid var(--border); padding-top: 24px;">
-                        <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--accent);">Currently Exploring
-                        </h3>
-                        <div class="skills-grid">
-                            <div class="skill-tag">Distributed Training</div>
-                            <div class="skill-tag">AI Deployment Architecture</div>
-                            <div class="skill-tag">System Optimization</div>
-                            <div class="skill-tag">Scalable Backend Infrastructure</div>
-                        </div>
-                    </div>
-                    <div class="skills-section">
-                        <h3>Core Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-tag">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                                </svg>
-                                Python
-                            </div>
-                            <div class="skill-tag">Machine Learning</div>
-                            <div class="skill-tag">Deep Learning</div>
-                            <div class="skill-tag">NLP</div>
-                            <div class="skill-tag">Federated Learning</div>
-                            <div class="skill-tag">Java</div>
-                            <div class="skill-tag">SQL / PostgreSQL</div>
-                            <div class="skill-tag">REST APIs</div>
-                            <div class="skill-tag">Data Structures</div>
-                            <div class="skill-tag">PyTorch</div>
-                            <div class="skill-tag">Git / GitHub</div>
-                            <div class="skill-tag">Linux</div>
-                        </div>
-                    </div>
-                    <div class="skill-bars">
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-label"><span>Artificial Intelligence &amp; ML</span><span>85%</span>
-                            </div>
-                            <div class="skill-bar-track">
-                                <div class="skill-bar-fill" data-width="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-label"><span>Backend Development</span><span>80%</span></div>
-                            <div class="skill-bar-track">
-                                <div class="skill-bar-fill" data-width="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-label"><span>Data Structures &amp; Algorithms</span><span>78%</span>
-                            </div>
-                            <div class="skill-bar-track">
-                                <div class="skill-bar-fill" data-width="78"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-label"><span>System Design</span><span>70%</span></div>
-                            <div class="skill-bar-track">
-                                <div class="skill-bar-fill" data-width="70"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="lang-section">
-                        <h3>Test Scores</h3>
-                        <div class="lang-card">
-                            <div class="lang-header">
-                                <div class="lang-title">
-                                    <h4>TOEFL iBT</h4>
-                                    <p>English Proficiency</p>
-                                </div>
-                                <div class="lang-scores">
-                                    <div class="lang-score-main">
-                                        <span class="score-val">100</span><span class="score-max">/120</span>
-                                    </div>
-                                    <div class="lang-divider"></div>
-                                    <div class="lang-cefr">
-                                        <span class="cefr-val">C1</span>
-                                        <span class="cefr-label">Advanced (CEFR)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="lang-breakdown">
-                                <div class="skill-bar-item">
-                                    <div class="skill-bar-label"><span>Reading</span><span>4.5/6</span></div>
-                                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
-                                </div>
-                                <div class="skill-bar-item">
-                                    <div class="skill-bar-label"><span>Listening</span><span>5.0/6</span></div>
-                                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="83.3"></div></div>
-                                </div>
-                                <div class="skill-bar-item">
-                                    <div class="skill-bar-label"><span>Writing</span><span>5.5/6</span></div>
-                                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="91.6"></div></div>
-                                </div>
-                                <div class="skill-bar-item">
-                                    <div class="skill-bar-label"><span>Speaking</span><span>4.0/6</span></div>
-                                    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="66.6"></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="assets/Resume_Juboraj_Ahmed.pdf" class="btn-download" target="_blank" download>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                            <polyline points="7 10 12 15 17 10" />
-                            <line x1="12" y1="15" x2="12" y2="3" />
+    <header>
+        <nav id="navbar" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo" aria-label="Juboraj Ahmed — back to top">JA<span
+                        class="accent">.</span></a>
+                <ul class="nav-links" role="list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#research" class="nav-link">Research</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#blog" class="nav-link">Writings</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle colour theme">
+                        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                         </svg>
-                        Download Resume
+                        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+                    </button>
+                    <button class="btn-hire"
+                        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Collaborate</button>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu"
+                        aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <ul role="list">
+                    <li><a href="#about" class="mobile-link">About</a></li>
+                    <li><a href="#research" class="mobile-link">Research</a></li>
+                    <li><a href="#projects" class="mobile-link">Projects</a></li>
+                    <li><a href="#education" class="mobile-link">Education</a></li>
+                    <li><a href="#blog" class="mobile-link">Writings</a></li>
+                    <li><a href="#contact" class="mobile-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" aria-labelledby="hero-heading">
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <span class="badge-dot" aria-hidden="true"></span>
+                    Open to Ph.D. and Research Opportunities
+                </div>
+                <h1 class="hero-title reveal" id="hero-heading">
+                    <span class="title-line">Building Trustworthy AI</span>
+                    <span class="title-line">for Healthcare and</span>
+                    <span class="title-line accent-text">Multimodal Systems</span>
+                </h1>
+                <p class="hero-subtitle reveal">
+                    I am a Computer Science and Engineering graduate from BRAC University exploring trustworthy AI,
+                    federated learning, medical vision-language models, and LLM security. My work focuses on building
+                    reliable, privacy-aware, and computationally practical machine learning systems.
+                </p>
+                <div class="hero-actions reveal">
+                    <a href="#research" class="btn-primary">View Research
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
                     </a>
+                    <a href="assets/Resume_Juboraj_Ahmed.pdf" class="btn-secondary" target="_blank"
+                        rel="noopener noreferrer" download>Download CV</a>
+                </div>
+                <div class="hero-stats reveal">
+                    <div class="stat">
+                        <span class="stat-num" data-target="1">0</span>
+                        <p>Undergraduate Thesis</p>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat">
+                        <span class="stat-num" data-target="2">0</span>
+                        <p>Manuscripts in Progress</p>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat">
+                        <span class="stat-num" data-target="7">0</span><span aria-hidden="true">+</span>
+                        <p>Technical Projects</p>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat">
+                        <span class="stat-num" data-target="100">0</span>
+                        <p>TOEFL iBT</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Implementations</span>
-                <h2>Selected <span class="accent-text">Research</span></h2>
+            <div class="hero-scroll-indicator" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
             </div>
-            <div class="filter-tabs reveal">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ai">AI / ML</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-            </div>
-            <div class="projects-grid" id="projects-grid">
+        </section>
 
-                <!-- Project: AI-Powered Multi-Class Text Classifier -->
-                <div class="project-card reveal" data-category="ai" id="proj-classifier">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
-                        <div class="project-svg-art">
-                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="280" fill="transparent" />
-                                <rect x="60" y="60" width="120" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
-                                <rect x="60" y="80" width="180" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
-                                <rect x="60" y="100" width="140" height="8" rx="4" fill="rgba(255,255,255,0.1)" />
-                                <circle cx="280" cy="140" r="40" fill="rgba(99,102,241,0.1)" stroke="#6366f1"
-                                    stroke-width="1.5" />
-                                <path d="M260 140 L300 140 M280 120 L280 160" stroke="#6366f1" stroke-width="2"
-                                    opacity="0.6" />
-                                <path d="M200 80 Q 240 80, 260 120" stroke="rgba(255,255,255,0.2)" fill="none"
-                                    stroke-dasharray="4" />
-                                <path d="M200 100 Q 240 100, 260 130" stroke="rgba(255,255,255,0.2)" fill="none"
-                                    stroke-dasharray="4" />
-                                <rect x="330" y="100" width="30" height="20" rx="4" fill="#10b981" opacity="0.4" />
-                                <rect x="330" y="130" width="30" height="20" rx="4" fill="#6366f1" opacity="0.4" />
-                                <rect x="330" y="160" width="30" height="20" rx="4" fill="#f59e0b" opacity="0.4" />
-                            </svg>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-links">
-                                <a href="https://github.com/juboraj-ahmed/AI-Sentiment-Analyst" class="overlay-btn"
-                                    target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="https://juboraj007-ai-sentiment-analyst.hf.space"
-                                    class="overlay-btn overlay-btn-outline" target="_blank"
-                                    rel="noopener noreferrer">Live Demo</a>
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 id="about-heading">Interested in AI that is <span class="accent-text">reliable, safe,</span>
+                        and interpretable</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-visual reveal">
+                        <div class="avatar-wrapper">
+                            <div class="avatar-bg"></div>
+                            <div class="avatar-image">
+                                <img src="assets/photo.jpg" alt="Portrait of Juboraj Ahmed, AI researcher"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="display:none;"
+                                    aria-hidden="true">
+                                    <defs>
+                                        <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#6366f1" />
+                                            <stop offset="100%" style="stop-color:#8b5cf6" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="100" fill="url(#avatarGrad)" />
+                                    <circle cx="100" cy="80" r="35" fill="rgba(255,255,255,0.9)" />
+                                    <ellipse cx="100" cy="160" rx="55" ry="45" fill="rgba(255,255,255,0.9)" />
+                                </svg>
+                            </div>
+                            <div class="avatar-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                AI Researcher
                             </div>
                         </div>
                     </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">AI / ML</span>
-                        </div>
-                        <h3 class="project-title">AI Text Classifier</h3>
-                        <p class="project-desc">A high-performance NLP pipeline featuring modular preprocessing and deep
-                            learning architectures (LSTM) alongside traditional ML models for scalable text analysis.
+                    <div class="about-content reveal">
+                        <p class="about-bio">I am a recent Computer Science and Engineering graduate from BRAC
+                            University with research interests in <strong>trustworthy artificial
+                                intelligence</strong>, <strong>federated learning</strong>,
+                            <strong>medical AI</strong>, <strong>vision-language models</strong>, and
+                            <strong>LLM security</strong>. My undergraduate thesis investigated a
+                            privacy-preserving federated learning framework for remote patient monitoring.
                         </p>
-                        <div class="project-tech">
-                            <span>Python</span><span>TensorFlow</span><span>Scikit-Learn</span><span>NLTK</span><span>Flask</span>
-                        </div>
-                    </div>
-                </div>
+                        <p class="about-bio">I am also involved in research on trustworthy vision-language models for
+                            medical image understanding and geometric defenses against prompt poisoning in federated
+                            LoRA systems. I am particularly interested in understanding how AI systems behave under
+                            uncertainty, adversarial pressure, privacy constraints, and limited computational
+                            resources.</p>
+                        <p class="about-bio">My long-term goal is to pursue <strong>doctoral research</strong>
+                            focused on developing reliable and interpretable AI systems for high-stakes
+                            applications.</p>
 
-                <!-- Project 1: SonicVAE -->
-                <div class="project-card reveal" data-category="ai" id="proj-sonic">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);">
-                        <div class="project-svg-art">
-                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="280" fill="transparent" />
-                                <path d="M50 140 Q 80 40, 110 140 T 170 140 T 230 140 T 290 140 T 350 140" fill="none"
-                                    stroke="#6366f1" stroke-width="3" opacity="0.6">
-                                    <animate attributeName="d" dur="3s" repeatCount="indefinite"
-                                        values="M50 140 Q 80 40, 110 140 T 170 140 T 230 140 T 290 140 T 350 140; M50 140 Q 80 240, 110 140 T 170 140 T 230 140 T 290 140 T 350 140; M50 140 Q 80 40, 110 140 T 170 140 T 230 140 T 290 140 T 350 140" />
-                                </path>
-                                <circle cx="200" cy="140" r="60" fill="none" stroke="#818cf8" stroke-width="1"
-                                    opacity="0.2" />
-                                <rect x="170" y="110" width="60" height="60" rx="8" fill="rgba(99,102,241,0.2)"
-                                    stroke="#6366f1" stroke-width="1.5" />
-                                <path d="M185 130 L215 130 M185 140 L215 140 M185 150 L215 150" stroke="#fff"
-                                    stroke-width="2" stroke-linecap="round" opacity="0.6" />
-                            </svg>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-links">
-                                <a href="https://github.com/juboraj-ahmed/SonicVAE" class="overlay-btn" target="_blank"
-                                    rel="noopener noreferrer">GitHub</a>
+                        <div class="exploring-section reveal"
+                            style="margin-top: 32px; border-top: 1px solid var(--border); padding-top: 24px;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--accent);">Research
+                                Interests</h3>
+                            <div class="skills-grid">
+                                <div class="skill-tag">Trustworthy Artificial Intelligence</div>
+                                <div class="skill-tag">Vision-Language Models</div>
+                                <div class="skill-tag">Federated Learning</div>
+                                <div class="skill-tag">LLM Security</div>
+                                <div class="skill-tag">AI for Healthcare</div>
+                                <div class="skill-tag">Privacy-Preserving Machine Learning</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">AI / ML</span>
-                        </div>
-                        <h3 class="project-title">SonicVAE</h3>
-                        <p class="project-desc">An advanced ResNetVAE framework designed to bridge the gap between deep
-                            learning research and real-world audio analysis. Focuses on system scalability and robust
-                            latent representation learning.</p>
-                        <div class="project-tech">
-                            <span>PyTorch</span><span>librosa</span><span>ResNet</span><span>AMP</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 2: Neural Clustering -->
-                <div class="project-card reveal" data-category="ai" id="proj-cluster">
-                    <div class="project-image" style="background: linear-gradient(135deg, #020617 0%, #0f172a 100%);">
-                        <div class="project-svg-art">
-                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="280" fill="transparent" />
-                                <circle cx="120" cy="100" r="40" fill="rgba(99,102,241,0.15)" stroke="#6366f1"
-                                    stroke-width="1" />
-                                <circle cx="280" cy="180" r="45" fill="rgba(16,185,129,0.15)" stroke="#10b981"
-                                    stroke-width="1" />
-                                <circle cx="250" cy="80" r="35" fill="rgba(245,158,11,0.15)" stroke="#f59e0b"
-                                    stroke-width="1" />
-                                <circle cx="125" cy="105" r="3" fill="#6366f1" />
-                                <circle cx="110" cy="90" r="3" fill="#6366f1" />
-                                <circle cx="275" cy="175" r="3" fill="#10b981" />
-                                <circle cx="290" cy="190" r="3" fill="#10b981" />
-                                <circle cx="245" cy="75" r="3" fill="#f59e0b" />
-                                <circle cx="260" cy="85" r="3" fill="#f59e0b" />
-                                <path d="M150 120 L240 170" stroke="rgba(255,255,255,0.1)" stroke-width="1"
-                                    stroke-dasharray="4" />
-                            </svg>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-links">
-                                <a href="https://github.com/juboraj-ahmed/Neural-Clustering-HuggingFace"
-                                    class="overlay-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <!-- Organised Skill Groups -->
+                        <div class="skills-groups-wrapper">
+                            <div class="skills-group">
+                                <h4 class="skills-group-title">Programming</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-tag">Python</div>
+                                    <div class="skill-tag">C++</div>
+                                    <div class="skill-tag">SQL</div>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h4 class="skills-group-title">Machine Learning</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-tag">PyTorch</div>
+                                    <div class="skill-tag">TensorFlow</div>
+                                    <div class="skill-tag">Scikit-learn</div>
+                                    <div class="skill-tag">Hugging Face Transformers</div>
+                                    <div class="skill-tag">NumPy</div>
+                                    <div class="skill-tag">Pandas</div>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h4 class="skills-group-title">Methods</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-tag">Federated Learning</div>
+                                    <div class="skill-tag">Transformers</div>
+                                    <div class="skill-tag">CNNs</div>
+                                    <div class="skill-tag">RNNs / LSTMs</div>
+                                    <div class="skill-tag">Variational Autoencoders</div>
+                                    <div class="skill-tag">Model Evaluation</div>
+                                    <div class="skill-tag">Hyperparameter Optimisation</div>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h4 class="skills-group-title">Development &amp; Research Tools</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-tag">Git / GitHub</div>
+                                    <div class="skill-tag">Docker</div>
+                                    <div class="skill-tag">Linux</div>
+                                    <div class="skill-tag">Jupyter Notebook</div>
+                                    <div class="skill-tag">Google Colab</div>
+                                    <div class="skill-tag">LaTeX</div>
+                                    <div class="skill-tag">Weights &amp; Biases</div>
+                                </div>
+                            </div>
+                            <div class="skills-group">
+                                <h4 class="skills-group-title">Web &amp; Backend</h4>
+                                <div class="skills-grid">
+                                    <div class="skill-tag">Flask</div>
+                                    <div class="skill-tag">Django</div>
+                                    <div class="skill-tag">REST APIs</div>
+                                    <div class="skill-tag">PostgreSQL</div>
+                                    <div class="skill-tag">JavaScript</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">AI / ML</span>
-                        </div>
-                        <h3 class="project-title">Neural Clustering</h3>
-                        <p class="project-desc">PyTorch implementation of autoencoder-based clustering. Emphasizes the
-                            transition from theoretical embeddings to structured data applications through optimized
-                            PyTorch workflows.</p>
-                        <div class="project-tech">
-                            <span>PyTorch</span><span>Scikit-learn</span><span>HuggingFace</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project: MediTrack -->
-                <div class="project-card reveal" data-category="web" id="proj-meditrack">
-                    <div class="project-image" style="background: linear-gradient(135deg, #0f2a24 0%, #064e3b 100%);">
-                        <div class="project-svg-art">
-                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="280" fill="transparent" />
-                                <path d="M40 180 L90 180 L120 120 L150 230 L180 140 L210 180 L360 180" fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                                <circle cx="120" cy="120" r="4" fill="#10b981" />
-                                <circle cx="150" cy="230" r="4" fill="#10b981" />
-                                <circle cx="180" cy="140" r="4" fill="#10b981" />
-                                <rect x="250" y="60" width="90" height="60" rx="8" fill="rgba(52, 211, 153, 0.15)" stroke="#34d399" stroke-width="1.5" />
-                                <path d="M265 85 L325 85 M265 100 L310 100" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity="0.6" />
-                            </svg>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-links">
-                                <a href="https://github.com/juboraj-ahmed/MediTrack" class="overlay-btn"
-                                    target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href="https://meditrack-1-xjxy.onrender.com"
-                                    class="overlay-btn overlay-btn-outline" target="_blank"
-                                    rel="noopener noreferrer">Live Demo</a>
+                        <div class="lang-section">
+                            <h3>Test Scores</h3>
+                            <div class="lang-card">
+                                <div class="lang-header">
+                                    <div class="lang-title">
+                                        <h4>TOEFL iBT</h4>
+                                        <p>English Proficiency</p>
+                                    </div>
+                                    <div class="lang-scores">
+                                        <div class="lang-score-main">
+                                            <span class="score-val">100</span><span class="score-max">/120</span>
+                                        </div>
+                                        <div class="lang-divider"></div>
+                                        <div class="lang-cefr">
+                                            <span class="cefr-val">C1</span>
+                                            <span class="cefr-label">Advanced (CEFR)</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">AI Web App</span>
-                        </div>
-                        <h3 class="project-title">MediTrack</h3>
-                        <p class="project-desc">AI-powered health monitoring ecosystem seamlessly linking daily biometric logging with advanced ML pipelines (Gradient Boosting) to predict wellness trends.</p>
-                        <div class="project-tech">
-                            <span>Django</span><span>Scikit-Learn</span><span>Chart.js</span><span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project: Smart Expense Splitter -->
-                <div class="project-card reveal" data-category="web" id="proj-splitter">
-                    <div class="project-image" style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
-                        <div class="project-svg-art">
-                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="280" fill="transparent" />
-                                <rect x="80" y="60" width="240" height="160" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
-                                <circle cx="140" cy="140" r="30" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2" />
-                                <circle cx="260" cy="140" r="30" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="2" />
-                                <path d="M170 140 L230 140" stroke="rgba(255,255,255,0.2)" stroke-width="2" stroke-dasharray="6" />
-                                <text x="140" y="146" fill="#10b981" font-size="20" font-weight="bold" text-anchor="middle" font-family="sans-serif">$</text>
-                                <text x="260" y="146" fill="#ef4444" font-size="20" font-weight="bold" text-anchor="middle" font-family="sans-serif">$</text>
-                                <path d="M190 130 L210 140 L190 150" fill="#fff" opacity="0.4"/>
+                        <a href="assets/Resume_Juboraj_Ahmed.pdf" class="btn-download" target="_blank" download>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
                             </svg>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-links">
-                                <a href="https://github.com/juboraj-ahmed/Smart-Expense-Splitter" class="overlay-btn"
-                                    target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Fintech Web App</span>
-                        </div>
-                        <h3 class="project-title">Smart Expense Splitter</h3>
-                        <p class="project-desc">A fintech-inspired group expense management system with a behavior-based dynamic trust scoring mechanism, built for reliable balance calculation and settlement.</p>
-                        <div class="project-tech">
-                            <span>Django</span><span>DRF</span><span>PostgreSQL</span><span>JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: MediConnect -->
-                <div class="project-card reveal" data-category="web" id="proj-medi">
-                    <div class="project-image" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
-                        <div class="project-svg-art">
-                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="280" fill="transparent" />
-                                <rect x="50" y="40" width="300" height="200" rx="12" fill="rgba(255,255,255,0.03)"
-                                    stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
-                                <rect x="50" y="40" width="300" height="40" rx="12" fill="rgba(255,255,255,0.05)" />
-                                <circle cx="75" cy="60" r="6" fill="#ef4444" opacity="0.8" />
-                                <circle cx="95" cy="60" r="6" fill="#f59e0b" opacity="0.8" />
-                                <circle cx="115" cy="60" r="6" fill="#10b981" opacity="0.8" />
-                                <path d="M160 110 L240 110 M200 70 L200 150" stroke="#10b981" stroke-width="20"
-                                    stroke-linecap="round" opacity="0.4" />
-                                <circle cx="200" cy="110" r="50" fill="none" stroke="#10b981" stroke-width="2"
-                                    opacity="0.3" />
-                                <rect x="80" y="160" width="100" height="12" rx="4" fill="rgba(255,255,255,0.15)" />
-                                <rect x="220" y="160" width="100" height="12" rx="4" fill="rgba(255,255,255,0.15)" />
-                                <rect x="80" y="185" width="240" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
-                                <rect x="80" y="200" width="180" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
-                            </svg>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-links">
-                                <a href="https://github.com/juboraj-ahmed/MediConnect" class="overlay-btn"
-                                    target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Web App</span>
-                        </div>
-                        <h3 class="project-title">MediConnect</h3>
-                        <p class="project-desc">A full-stack healthcare ecosystem focused on backend reliability and
-                            maintainable API architecture. Connects multiple user nodes (Patients, Doctors, Pharmacies)
-                            via a scalable Flask foundation.</p>
-                        <div class="project-tech">
-                            <span>Flask</span><span>Socket.IO</span><span>SQLAlchemy</span><span>Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Climate Explorer -->
-                <div class="project-card reveal" data-category="web" id="proj-climate">
-                    <div class="project-image" style="background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);">
-                        <div class="project-svg-art">
-                            <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="280" fill="transparent" />
-                                <circle cx="200" cy="140" r="70" fill="rgba(16,185,129,0.1)" stroke="#10b981"
-                                    stroke-width="1.5" stroke-dasharray="10 5" />
-                                <path d="M160 140 A 40 40 0 1 1 240 140" fill="none" stroke="#34d399" stroke-width="4"
-                                    stroke-linecap="round" />
-                                <path d="M180 140 Q 200 100, 220 140" fill="#10b981" opacity="0.6" />
-                                <rect x="130" y="200" width="140" height="10" rx="5" fill="rgba(255,255,255,0.1)" />
-                                <rect x="130" y="200" width="90" height="10" rx="5" fill="#10b981" />
-                            </svg>
-                        </div>
-                        <div class="project-overlay">
-                            <div class="overlay-links">
-                                <a href="https://github.com/juboraj-ahmed/Climate_Change_Project" class="overlay-btn"
-                                    target="_blank" rel="noopener noreferrer">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-meta">
-                            <span class="project-category">Web App</span>
-                        </div>
-                        <h3 class="project-title">Climate Explorer</h3>
-                        <p class="project-desc">Data-driven Django platform designed with modular backend logic to
-                            visualize complex climate metrics. Built for maintainability and efficient API-driven data
-                            fetching.</p>
-                        <div class="project-tech">
-                            <span>Django</span><span>Python</span><span>Data Vis</span><span>APIs</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Academic Journey</span>
-                <h2>Education &amp; <span class="accent-text">Research</span></h2>
-            </div>
-            <div class="timeline">
-
-
-
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot timeline-dot-edu"></div>
-                    <div class="timeline-date">2022 — Spring 2026</div>
-                    <div class="timeline-card">
-                        <div class="timeline-company-logo"
-                            style="background: linear-gradient(135deg, #1e40af, #3b82f6);">BU</div>
-                        <div class="timeline-content">
-                            <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
-                            <p class="timeline-company">BRAC University, Bangladesh</p>
-                            <div class="timeline-desc">
-                                <p style="font-weight: 600; margin-bottom: 8px; color: var(--accent);">Research Focus:
-                                    Federated Learning for Remote Patient Monitoring (Distributed AI)</p>
-                                <ul
-                                    style="list-style-type: disc; padding-left: 20px; font-size: inherit; color: inherit;">
-                                    <li>Drafted research documentation and technical reports using LaTeX for
-                                        publication-ready precision.</li>
-                                    <li>Presented complex AI architectures through structured PowerPoint frameworks for
-                                        technical and non-technical stakeholders.</li>
-                                </ul>
-                            </div>
-                            <h4
-                                style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin: 16px 0 8px;">
-                                Relevant Coursework:</h4>
-                            <div class="timeline-tags">
-                                <span>Neural Networks</span><span>Data Structures &amp; Algorithms</span><span>Database
-                                    Management Systems</span><span>Operating
-                                    Systems</span><span>OOP</span><span>Software Engineering</span><span>Artificial
-                                    Intelligence</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Writings / Blog Section -->
-    <section id="blog">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Writings</span>
-                <h2>My <span class="accent-text">Articles &amp; Papers</span></h2>
-            </div>
-            <p class="writings-intro reveal">Things I've written — research, thoughts, and explorations. Click to read
-                any piece directly in your browser.</p>
-            <div class="blog-grid" id="writings-grid">
-
-                <!-- ═══════════════════════════════════════════════════
-                   ADD NEW WRITINGS HERE — copy one <article> block,
-                   update the badge, gradient, title, description & PDF href.
-                   ═══════════════════════════════════════════════════ -->
-
-                <!-- Writing: Multi-Class Text Classification Research -->
-                <article class="blog-card writing-card reveal" data-date="2026-01-15">
-                    <div class="blog-image writing-banner"
-                        style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);">
-                        <span class="blog-category-badge">Research Paper</span>
-                        <div class="writing-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5">
-                                <path
-                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                                <line x1="12" y1="22.08" x2="12" y2="12" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta"><span>2026</span><span>Research</span></div>
-                        <h3>Multi-Class Text Classification: Word Representations vs Models</h3>
-                        <p>A comprehensive study comparing TF-IDF, Word2Vec, and GloVe representations across LSTM and
-                            traditional ML models for multi-class classification tasks.</p>
-                        <a href="writings/AI_Sentiment_Analysis.pdf" target="_blank" rel="noopener noreferrer"
-                            class="writing-read-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            Read Paper
+                            Download CV
                         </a>
                     </div>
-                </article>
+                </div>
+            </div>
+        </section>
 
-                <!-- Writing 1 -->
-                <article class="blog-card writing-card reveal" data-date="2025-12-06">
-                    <div class="blog-image writing-banner"
-                        style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
-                        <span class="blog-category-badge">Research</span>
-                        <div class="writing-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5">
+        <!-- Research Section -->
+        <section id="research" aria-labelledby="research-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Research</span>
+                    <h2 id="research-heading">Research <span class="accent-text">Experience</span></h2>
+                </div>
+
+                <div class="research-timeline">
+
+                    <!-- Research 1: Trustworthy VLMs -->
+                    <div class="research-card reveal">
+                        <div class="research-card-header">
+                            <div class="research-card-logo"
+                                style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">VLM</div>
+                            <div class="research-card-meta">
+                                <span class="research-status research-status-ongoing">Ongoing</span>
+                                <span class="research-date">2026 — Present</span>
+                            </div>
+                        </div>
+                        <div class="research-card-body">
+                            <h3>Trustworthy Vision-Language Models for Medical Image Understanding</h3>
+                            <p>Investigating reliability challenges in medical vision-language models, including
+                                sycophancy, hallucination, calibration, and robustness under misleading or conflicting
+                                prompts. The research aims to understand how multimodal models represent and respond to
+                                clinically consequential pressure.</p>
+                            <div class="research-tags">
+                                <span>Vision-Language Models</span>
+                                <span>Medical AI</span>
+                                <span>Trustworthy AI</span>
+                                <span>Hallucination</span>
+                                <span>Calibration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research 2: JASAL -->
+                    <div class="research-card reveal">
+                        <div class="research-card-header">
+                            <div class="research-card-logo"
+                                style="background: linear-gradient(135deg, #1e40af, #3b82f6);">BU</div>
+                            <div class="research-card-meta">
+                                <span class="research-status research-status-complete">Undergraduate Thesis</span>
+                                <span class="research-date">2025 — 2026</span>
+                            </div>
+                        </div>
+                        <div class="research-card-body">
+                            <h3>JASAL: A Remote Patient Health Monitoring System Driven by Federated Learning</h3>
+                            <p class="research-institution">BRAC University</p>
+                            <p>Developed and evaluated a federated learning framework for physiological anomaly
+                                detection using 32,796 patient records distributed across 10 non-IID client
+                                partitions. The work investigated differential privacy, secure aggregation, adaptive
+                                patient profiling, interpretable anomaly detection, model quantization, and
+                                communication-efficient deployment.</p>
+                            <ul class="research-highlights">
+                                <li>Evaluated a deep-autoencoder-based anomaly detection framework across non-IID
+                                    federated clients.</li>
+                                <li>Investigated differential privacy and secure multiparty computation against
+                                    privacy attacks.</li>
+                                <li>Optimised the model for edge deployment using INT8 quantisation and
+                                    communication-efficient training.</li>
+                            </ul>
+                            <div class="research-tags">
+                                <span>Federated Learning</span>
+                                <span>Differential Privacy</span>
+                                <span>Anomaly Detection</span>
+                                <span>PyTorch</span>
+                                <span>Edge Deployment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Research Manuscripts -->
+                <div class="manuscripts-section reveal">
+                    <h3 class="manuscripts-title">Research Manuscripts in Progress</h3>
+                    <div class="manuscript-card">
+                        <div class="manuscript-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                                 <polyline points="14 2 14 8 20 8" />
                                 <line x1="16" y1="13" x2="8" y2="13" />
                                 <line x1="16" y1="17" x2="8" y2="17" />
                             </svg>
                         </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta"><span>2025</span><span>Research Paper</span></div>
-                        <h3>Akhand Bharat Conspiracy Theory</h3>
-                        <p>A critical analysis of the "Akhand Bharat" ideology — examining its historical roots,
-                            geopolitical implications, and impact on regional security in South Asia.</p>
-                        <a href="writings/Akhand Bharat Conspiracy Theory.pdf" target="_blank" rel="noopener noreferrer"
-                            class="writing-read-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            Read Paper
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Writing 2 -->
-                <article class="blog-card writing-card reveal" data-date="2025-01-01">
-                    <div class="blog-image writing-banner"
-                        style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);">
-                        <span class="blog-category-badge">AI &amp; Robotics</span>
-                        <div class="writing-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5">
-                                <rect x="2" y="7" width="20" height="14" rx="2" />
-                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-                                <line x1="12" y1="12" x2="12" y2="16" />
-                                <line x1="10" y1="14" x2="14" y2="14" />
-                            </svg>
+                        <div class="manuscript-body">
+                            <h4>Intra-Module Subspace Coherence: A Geometric Defense Against Composite Prompt
+                                Poisoning in Federated LoRA</h4>
+                            <p class="manuscript-authors">Juboraj Ahmed and S. S. Biswas</p>
+                            <span class="manuscript-status">Manuscript in preparation, 2026</span>
                         </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta"><span>2025</span><span>Article</span></div>
-                        <h3>Can a Self-Driving Car's Architecture Power a Home Robot?</h3>
-                        <p>Exploring whether the sensor fusion, perception, and decision-making stack behind
-                            autonomous vehicles can be adapted to drive next-generation home robotics.</p>
-                        <a href="writings/Can_a_Self_Driving_Car_s_Architecture_Power_a_Home_Robot_.pdf" target="_blank"
-                            rel="noopener noreferrer" class="writing-read-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            Read Article
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Writing 3 -->
-                <article class="blog-card writing-card reveal" data-date="2025-01-01">
-                    <div class="blog-image writing-banner"
-                        style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);">
-                        <span class="blog-category-badge">Policy Brief</span>
-                        <div class="writing-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10" />
-                                <line x1="12" y1="8" x2="12" y2="12" />
-                                <line x1="12" y1="16" x2="12.01" y2="16" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta"><span>2025</span><span>Policy Brief</span></div>
-                        <h3>Justice Denied: Confronting the Constitutional Breakdown Enabling Extrajudicial
-                            Killings in Bangladesh</h3>
-                        <p>A policy brief examining the legal and constitutional failures that enable extrajudicial
-                            killings in Bangladesh and proposing reform pathways.</p>
-                        <a href="writings/Policy Brief Justice Denied_ Confronting the Constitutional Breakdown Enabling Extrajudicial Killings in Bangladesh.pdf"
-                            target="_blank" rel="noopener noreferrer" class="writing-read-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            Read Brief
-                        </a>
-                    </div>
-                </article>
-
-                <!-- Writing 4 -->
-                <article class="blog-card writing-card reveal" data-date="2025-01-01">
-                    <div class="blog-image writing-banner"
-                        style="background: linear-gradient(135deg, #10b981 0%, #0284c7 100%);">
-                        <span class="blog-category-badge">Systems</span>
-                        <div class="writing-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
-                                fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5">
-                                <rect x="2" y="3" width="20" height="14" rx="2" />
-                                <polyline points="8 21 12 17 16 21" />
-                                <line x1="12" y1="17" x2="12" y2="21" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta"><span>2025</span><span>Technical Guide</span></div>
-                        <h3>Understanding Unix File Permissions and Extended Access Control Lists</h3>
-                        <p>A comprehensive technical guide to Unix file permission models, ACLs, and practical
-                            strategies for securing files and directories in Linux environments.</p>
-                        <a href="writings/Understanding_Unix_File_Permissions_and_Extended_Access_Control_Lists.pdf"
-                            target="_blank" rel="noopener noreferrer" class="writing-read-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            Read Guide
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Contact</span>
-                <h2>Let's Build Something <span class="accent-text">Amazing</span></h2>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-info reveal">
-                    <p class="contact-intro">Have a project in mind or want to chat? I'd love to hear from you. I'm
-                        currently available for freelance projects and full-time roles.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                    <polyline points="22,6 12,13 2,6" />
-                                </svg>
-                            </div>
-                            <span>juborajahmed0213@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                    <circle cx="12" cy="10" r="3" />
-                                </svg>
-                            </div>
-                            <span>80/11, Saydabad, Dhaka-1100, Bangladesh</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/monkey-d-siyam" target="_blank" rel="noopener noreferrer"
-                            class="social-link" aria-label="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path
-                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/juboraj-ahmed-95709824a" target="_blank"
-                            rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path
-                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                <rect x="2" y="9" width="4" height="12" />
-                                <circle cx="4" cy="4" r="2" />
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/juborajahmed07/" target="_blank" rel="noopener noreferrer"
-                            class="social-link" aria-label="Facebook">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/______siyam/" target="_blank" rel="noopener noreferrer"
-                            class="social-link" aria-label="Instagram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                            </svg>
-                        </a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper reveal">
-                    <form class="contact-form" id="contact-form" novalidate>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="John Doe" required />
-                                <span class="form-error" id="name-error"></span>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Implementations</span>
+                    <h2 id="projects-heading">Selected Research and <span class="accent-text">Engineering</span>
+                        Projects</h2>
+                </div>
+                <div class="filter-tabs reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                    <button class="filter-btn" data-filter="ai">AI / ML</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- Project: PromptPoisonLab -->
+                    <div class="project-card reveal" data-category="security" id="proj-promptpoisonlab">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #18181b 0%, #27272a 100%);">
+                            <div class="project-svg-art">
+                                <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect width="400" height="280" fill="transparent" />
+                                    <rect x="40" y="40" width="320" height="200" rx="10"
+                                        fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.3)"
+                                        stroke-width="1.5" />
+                                    <rect x="40" y="40" width="320" height="28" rx="10"
+                                        fill="rgba(99,102,241,0.12)" />
+                                    <circle cx="62" cy="54" r="5" fill="#ef4444" opacity="0.7" />
+                                    <circle cx="80" cy="54" r="5" fill="#f59e0b" opacity="0.7" />
+                                    <circle cx="98" cy="54" r="5" fill="#10b981" opacity="0.7" />
+                                    <rect x="56" y="84" width="80" height="6" rx="3"
+                                        fill="rgba(99,102,241,0.6)" />
+                                    <rect x="148" y="84" width="120" height="6" rx="3"
+                                        fill="rgba(255,255,255,0.15)" />
+                                    <rect x="56" y="104" width="48" height="6" rx="3"
+                                        fill="rgba(16,185,129,0.5)" />
+                                    <rect x="116" y="104" width="160" height="6" rx="3"
+                                        fill="rgba(255,255,255,0.1)" />
+                                    <rect x="72" y="124" width="200" height="6" rx="3"
+                                        fill="rgba(255,255,255,0.08)" />
+                                    <rect x="72" y="144" width="160" height="6" rx="3"
+                                        fill="rgba(255,255,255,0.08)" />
+                                    <rect x="56" y="164" width="100" height="6" rx="3"
+                                        fill="rgba(245,158,11,0.5)" />
+                                    <rect x="168" y="164" width="80" height="6" rx="3"
+                                        fill="rgba(255,255,255,0.1)" />
+                                    <rect x="56" y="185" width="8" height="14" rx="1"
+                                        fill="rgba(99,102,241,0.8)" />
+                                </svg>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="john@example.com" required />
-                                <span class="form-error" id="email-error"></span>
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com/juboraj-ahmed/PromptPoisonLab" class="overlay-btn"
+                                        target="_blank" rel="noopener noreferrer"
+                                        aria-label="PromptPoisonLab on GitHub">GitHub</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" />
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">LLM Security</span>
+                            </div>
+                            <h3 class="project-title">PromptPoisonLab</h3>
+                            <p class="project-subtitle">LLM Security Benchmarking Toolkit</p>
+                            <p class="project-desc">A modular research toolkit for generating, organising, and
+                                evaluating prompt-poisoning datasets across more than 30 attack strategies.</p>
+                            <ul class="project-highlights">
+                                <li>Implements evolutionary prompt mutation using genetic algorithms.</li>
+                                <li>Uses FAISS-based semantic deduplication to reduce repeated attack samples.</li>
+                                <li>Provides structured experiment logging and configurable risk evaluation.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Python</span><span>Streamlit</span><span>FAISS</span><span>SentenceTransformers</span><span>Docker</span>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
-                                required></textarea>
-                            <span class="form-error" id="message-error"></span>
+                    </div>
+
+                    <!-- Project: Prompt Injection Playground -->
+                    <div class="project-card reveal" data-category="security" id="proj-pip">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #1c1c2e 0%, #2d1b69 100%);">
+                            <div class="project-svg-art">
+                                <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect width="400" height="280" fill="transparent" />
+                                    <path
+                                        d="M200 50 L280 80 L280 160 Q280 210 200 240 Q120 210 120 160 L120 80 Z"
+                                        fill="rgba(139,92,246,0.1)" stroke="rgba(139,92,246,0.4)"
+                                        stroke-width="2" />
+                                    <path d="M200 110 L200 165" stroke="rgba(245,158,11,0.8)" stroke-width="8"
+                                        stroke-linecap="round" />
+                                    <circle cx="200" cy="185" r="5" fill="rgba(245,158,11,0.8)" />
+                                    <circle cx="80" cy="90" r="3" fill="rgba(239,68,68,0.6)" />
+                                    <circle cx="310" cy="100" r="3" fill="rgba(239,68,68,0.6)" />
+                                    <circle cx="70" cy="190" r="3" fill="rgba(239,68,68,0.4)" />
+                                    <circle cx="325" cy="180" r="3" fill="rgba(239,68,68,0.4)" />
+                                    <path d="M83 90 L120 110" stroke="rgba(239,68,68,0.3)" stroke-width="1"
+                                        stroke-dasharray="4" />
+                                    <path d="M307 100 L280 115" stroke="rgba(239,68,68,0.3)" stroke-width="1"
+                                        stroke-dasharray="4" />
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com/juboraj-ahmed" class="overlay-btn" target="_blank"
+                                        rel="noopener noreferrer" aria-label="View GitHub profile">GitHub</a>
+                                </div>
+                            </div>
                         </div>
-                        <button type="submit" class="btn-submit" id="submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">LLM Security</span>
+                            </div>
+                            <h3 class="project-title">Prompt Injection Playground</h3>
+                            <p class="project-subtitle">Interactive LLM Security Evaluation Framework</p>
+                            <p class="project-desc">An extensible environment for simulating and evaluating more
+                                than 15 prompt-injection strategies against large language models.</p>
+                            <ul class="project-highlights">
+                                <li>Supports heuristic evaluation and LLM-as-a-judge workflows.</li>
+                                <li>Logs experiments in structured JSONL format.</li>
+                                <li>Provides visual analysis of attack behaviour and model responses.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Python</span><span>Streamlit</span><span>OpenAI API</span><span>OpenRouter API</span><span>Plotly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: AI Context Analyst -->
+                    <div class="project-card reveal" data-category="ai" id="proj-classifier">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+                            <div class="project-svg-art">
+                                <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect width="400" height="280" fill="transparent" />
+                                    <rect x="60" y="60" width="120" height="8" rx="4"
+                                        fill="rgba(255,255,255,0.1)" />
+                                    <rect x="60" y="80" width="180" height="8" rx="4"
+                                        fill="rgba(255,255,255,0.1)" />
+                                    <rect x="60" y="100" width="140" height="8" rx="4"
+                                        fill="rgba(255,255,255,0.1)" />
+                                    <circle cx="280" cy="140" r="40" fill="rgba(99,102,241,0.1)"
+                                        stroke="#6366f1" stroke-width="1.5" />
+                                    <path d="M260 140 L300 140 M280 120 L280 160" stroke="#6366f1"
+                                        stroke-width="2" opacity="0.6" />
+                                    <path d="M200 80 Q 240 80, 260 120" stroke="rgba(255,255,255,0.2)"
+                                        fill="none" stroke-dasharray="4" />
+                                    <path d="M200 100 Q 240 100, 260 130" stroke="rgba(255,255,255,0.2)"
+                                        fill="none" stroke-dasharray="4" />
+                                    <rect x="330" y="100" width="30" height="20" rx="4" fill="#10b981"
+                                        opacity="0.4" />
+                                    <rect x="330" y="130" width="30" height="20" rx="4" fill="#6366f1"
+                                        opacity="0.4" />
+                                    <rect x="330" y="160" width="30" height="20" rx="4" fill="#f59e0b"
+                                        opacity="0.4" />
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com/juboraj-ahmed/AI-Sentiment-Analyst"
+                                        class="overlay-btn" target="_blank" rel="noopener noreferrer"
+                                        aria-label="AI Context Analyst on GitHub">GitHub</a>
+                                    <a href="https://juboraj007-ai-sentiment-analyst.hf.space"
+                                        class="overlay-btn overlay-btn-outline" target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="AI Context Analyst live demo">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">AI / ML</span>
+                            </div>
+                            <h3 class="project-title">AI Context Analyst</h3>
+                            <p class="project-subtitle">Large-Scale Multi-Class Text Classification</p>
+                            <p class="project-desc">A multi-class NLP pipeline comparing deep-learning and
+                                traditional machine-learning approaches on a dataset containing more than 1.45
+                                million records.</p>
+                            <ul class="project-highlights">
+                                <li>Combines LSTM-based classification with TF-IDF and logistic-regression baselines.</li>
+                                <li>Includes modular preprocessing and class-balancing components.</li>
+                                <li>Deploys inference through a Dockerised Flask application.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Python</span><span>TensorFlow</span><span>Scikit-learn</span><span>LSTM</span><span>Flask</span><span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project: MediTrack -->
+                    <div class="project-card reveal" data-category="web" id="proj-meditrack">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #0f2a24 0%, #064e3b 100%);">
+                            <div class="project-svg-art">
+                                <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <rect width="400" height="280" fill="transparent" />
+                                    <path
+                                        d="M40 180 L90 180 L120 120 L150 230 L180 140 L210 180 L360 180"
+                                        fill="none" stroke="#34d399" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle cx="120" cy="120" r="4" fill="#10b981" />
+                                    <circle cx="150" cy="230" r="4" fill="#10b981" />
+                                    <circle cx="180" cy="140" r="4" fill="#10b981" />
+                                    <rect x="250" y="60" width="90" height="60" rx="8"
+                                        fill="rgba(52, 211, 153, 0.15)" stroke="#34d399" stroke-width="1.5" />
+                                    <path d="M265 85 L325 85 M265 100 L310 100" stroke="#fff" stroke-width="2"
+                                        stroke-linecap="round" opacity="0.6" />
+                                </svg>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="https://github.com/juboraj-ahmed/MediTrack" class="overlay-btn"
+                                        target="_blank" rel="noopener noreferrer"
+                                        aria-label="MediTrack on GitHub">GitHub</a>
+                                    <a href="https://meditrack-1-xjxy.onrender.com"
+                                        class="overlay-btn overlay-btn-outline" target="_blank"
+                                        rel="noopener noreferrer" aria-label="MediTrack live demo">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">AI Web App</span>
+                            </div>
+                            <h3 class="project-title">MediTrack</h3>
+                            <p class="project-subtitle">AI-Powered Health Risk Monitoring</p>
+                            <p class="project-desc">A health-monitoring application that uses a Gradient Boosting
+                                classifier to estimate health-risk categories and visualise longitudinal user
+                                data.</p>
+                            <ul class="project-highlights">
+                                <li>Supports low-, medium-, and high-risk health categorisation.</li>
+                                <li>Provides interactive health-history and prediction visualisations.</li>
+                                <li>Integrates a machine-learning inference pipeline with a Django backend.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>Django</span><span>Scikit-learn</span><span>Chart.js</span><span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Additional Projects -->
+                <div class="additional-projects-section reveal">
+                    <h3 class="additional-projects-title">Additional Projects</h3>
+                    <div class="additional-projects-grid">
+
+                        <div class="additional-card">
+                            <h4>SonicVAE</h4>
+                            <p>A ResNet-based variational autoencoder for learning latent representations from Mel
+                                spectrograms and exploring unsupervised music clustering.</p>
+                            <div class="project-tech">
+                                <span>PyTorch</span><span>librosa</span><span>ResNet</span>
+                            </div>
+                            <a href="https://github.com/juboraj-ahmed/SonicVAE" target="_blank"
+                                rel="noopener noreferrer" class="additional-card-link"
+                                aria-label="SonicVAE on GitHub">GitHub →</a>
+                        </div>
+
+                        <div class="additional-card">
+                            <h4>MediConnect</h4>
+                            <p>Full-stack healthcare ecosystem connecting Patients, Doctors, and Pharmacies via a
+                                maintainable Flask-based API architecture with real-time Socket.IO support.</p>
+                            <div class="project-tech">
+                                <span>Flask</span><span>Socket.IO</span><span>SQLAlchemy</span>
+                            </div>
+                            <a href="https://github.com/juboraj-ahmed/MediConnect" target="_blank"
+                                rel="noopener noreferrer" class="additional-card-link"
+                                aria-label="MediConnect on GitHub">GitHub →</a>
+                        </div>
+
+                        <div class="additional-card">
+                            <h4>Smart Expense Splitter</h4>
+                            <p>Fintech-inspired group expense management system with behaviour-based dynamic trust
+                                scoring for reliable balance calculation and settlement.</p>
+                            <div class="project-tech">
+                                <span>Django</span><span>DRF</span><span>PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/juboraj-ahmed/Smart-Expense-Splitter" target="_blank"
+                                rel="noopener noreferrer" class="additional-card-link"
+                                aria-label="Smart Expense Splitter on GitHub">GitHub →</a>
+                        </div>
+
+                        <div class="additional-card">
+                            <h4>Climate Explorer</h4>
+                            <p>Data-driven Django platform with modular backend logic to visualise complex climate
+                                metrics, built for maintainability and efficient API-driven data fetching.</p>
+                            <div class="project-tech">
+                                <span>Django</span><span>Python</span><span>APIs</span>
+                            </div>
+                            <a href="https://github.com/juboraj-ahmed/Climate_Change_Project" target="_blank"
+                                rel="noopener noreferrer" class="additional-card-link"
+                                aria-label="Climate Explorer on GitHub">GitHub →</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" aria-labelledby="education-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Academic Journey</span>
+                    <h2 id="education-heading">Education &amp; <span class="accent-text">Background</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot timeline-dot-edu"></div>
+                        <div class="timeline-date">Graduated 2026</div>
+                        <div class="timeline-card">
+                            <div class="timeline-company-logo"
+                                style="background: linear-gradient(135deg, #1e40af, #3b82f6);">BU</div>
+                            <div class="timeline-content">
+                                <h3>Bachelor of Science in Computer Science and Engineering</h3>
+                                <p class="timeline-company">BRAC University, Dhaka, Bangladesh</p>
+                                <div class="timeline-desc">
+                                    <p style="font-weight: 600; margin-bottom: 8px; color: var(--accent);">Research
+                                        Focus: Federated Learning, Trustworthy AI, Medical AI, and Vision-Language
+                                        Models</p>
+                                    <ul
+                                        style="list-style-type: disc; padding-left: 20px; font-size: inherit; color: inherit;">
+                                        <li>Undergraduate thesis on federated learning for privacy-preserving remote
+                                            patient health monitoring.</li>
+                                        <li>Drafted research documentation and technical reports using LaTeX for
+                                            publication-ready precision.</li>
+                                        <li>Presented complex AI architectures to both technical and non-technical
+                                            stakeholders.</li>
+                                    </ul>
+                                </div>
+                                <h4
+                                    style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin: 16px 0 8px;">
+                                    Selected Coursework:</h4>
+                                <div class="timeline-tags">
+                                    <span>Artificial Intelligence</span>
+                                    <span>Neural Networks</span>
+                                    <span>Data Structures &amp; Algorithms</span>
+                                    <span>Operating Systems</span>
+                                    <span>Database Management Systems</span>
+                                    <span>Software Engineering</span>
+                                    <span>Natural Language Processing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Writing Section -->
+        <section id="blog" aria-labelledby="blog-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Technical Writing</span>
+                    <h2 id="blog-heading">My <span class="accent-text">Articles &amp; Papers</span></h2>
+                </div>
+                <p class="writings-intro reveal">Things I have written — research, technical guides, and
+                    explorations. Click any item to read directly in your browser.</p>
+                <div class="blog-grid" id="writings-grid">
+
+                    <!-- Writing: Multi-Class Text Classification -->
+                    <article class="blog-card writing-card reveal" data-date="2026-01-15">
+                        <div class="blog-image writing-banner"
+                            style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);">
+                            <span class="blog-category-badge">Technical Report</span>
+                            <div class="writing-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                    viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                                    <line x1="12" y1="22.08" x2="12" y2="12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><span>2026</span><span>Technical Report</span></div>
+                            <h3>Multi-Class Text Classification: Comparing Word Representations and Models</h3>
+                            <p>A study comparing TF-IDF, Word2Vec, and GloVe word representations across LSTM and
+                                traditional machine-learning models (logistic regression, SVM) for multi-class text
+                                classification tasks on a large-scale dataset.</p>
+                            <a href="writings/AI_Sentiment_Analysis.pdf" target="_blank"
+                                rel="noopener noreferrer" class="writing-read-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                Read Report
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Writing: Akhand Bharat -->
+                    <article class="blog-card writing-card reveal" data-date="2025-12-06">
+                        <div class="blog-image writing-banner"
+                            style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
+                            <span class="blog-category-badge">Critical Analysis</span>
+                            <div class="writing-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                    viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+                                    stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><span>2025</span><span>Critical Analysis</span></div>
+                            <h3>Akhand Bharat Conspiracy Theory</h3>
+                            <p>A critical analysis of the "Akhand Bharat" ideology — examining its historical
+                                roots, geopolitical implications, and impact on regional security in South Asia.
+                            </p>
+                            <a href="writings/Akhand Bharat Conspiracy Theory.pdf" target="_blank"
+                                rel="noopener noreferrer" class="writing-read-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                Read Paper
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Writing: Self-Driving Car -->
+                    <article class="blog-card writing-card reveal" data-date="2025-06-01">
+                        <div class="blog-image writing-banner"
+                            style="background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);">
+                            <span class="blog-category-badge">AI &amp; Robotics</span>
+                            <div class="writing-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                    viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+                                    stroke-width="1.5">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                    <line x1="12" y1="12" x2="12" y2="16" />
+                                    <line x1="10" y1="14" x2="14" y2="14" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><span>2025</span><span>Article</span></div>
+                            <h3>Can a Self-Driving Car's Architecture Power a Home Robot?</h3>
+                            <p>Exploring whether the sensor fusion, perception, and decision-making stack behind
+                                autonomous vehicles can be adapted to drive next-generation home robotics.</p>
+                            <a href="writings/Can_a_Self_Driving_Car_s_Architecture_Power_a_Home_Robot_.pdf"
+                                target="_blank" rel="noopener noreferrer" class="writing-read-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                Read Article
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Writing: Policy Brief -->
+                    <article class="blog-card writing-card reveal" data-date="2025-03-01">
+                        <div class="blog-image writing-banner"
+                            style="background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);">
+                            <span class="blog-category-badge">Policy Brief</span>
+                            <div class="writing-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                    viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="12" y1="8" x2="12" y2="12" />
+                                    <line x1="12" y1="16" x2="12.01" y2="16" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><span>2025</span><span>Policy Brief</span></div>
+                            <h3>Justice Denied: Confronting the Constitutional Breakdown Enabling Extrajudicial
+                                Killings in Bangladesh</h3>
+                            <p>A policy brief examining the legal and constitutional failures that enable
+                                extrajudicial killings in Bangladesh and proposing reform pathways.</p>
+                            <a href="writings/Policy Brief Justice Denied_ Confronting the Constitutional Breakdown Enabling Extrajudicial Killings in Bangladesh.pdf"
+                                target="_blank" rel="noopener noreferrer" class="writing-read-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                Read Brief
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Writing: Unix File Permissions -->
+                    <article class="blog-card writing-card reveal" data-date="2025-01-01">
+                        <div class="blog-image writing-banner"
+                            style="background: linear-gradient(135deg, #10b981 0%, #0284c7 100%);">
+                            <span class="blog-category-badge">Technical Guide</span>
+                            <div class="writing-icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                    viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+                                    stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <polyline points="8 21 12 17 16 21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta"><span>2025</span><span>Technical Guide</span></div>
+                            <h3>Understanding Unix File Permissions and Extended Access Control Lists</h3>
+                            <p>A comprehensive technical guide to Unix file permission models, ACLs, and practical
+                                strategies for securing files and directories in Linux environments.</p>
+                            <a href="writings/Understanding_Unix_File_Permissions_and_Extended_Access_Control_Lists.pdf"
+                                target="_blank" rel="noopener noreferrer" class="writing-read-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                </svg>
+                                Read Guide
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Contact</span>
+                    <h2 id="contact-heading">Let's <span class="accent-text">Connect</span></h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <p class="contact-intro">I am open to Ph.D. opportunities, research collaborations, and
+                            conversations about trustworthy AI, federated learning, and LLM security. Feel free to
+                            reach out.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                </div>
+                                <a href="mailto:juborajahmed0213@gmail.com"
+                                    class="contact-link">juborajahmed0213@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/juboraj-ahmed" target="_blank" rel="noopener noreferrer"
+                                class="social-link" aria-label="Juboraj Ahmed on GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/juboraj-ahmed-95709824a" target="_blank"
+                                rel="noopener noreferrer" class="social-link"
+                                aria-label="Juboraj Ahmed on LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="mailto:juborajahmed0213@gmail.com" class="btn-contact-email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <line x1="22" y1="2" x2="11" y2="13" />
                                 <polygon points="22 2 15 22 11 13 2 9 22 2" />
                             </svg>
-                        </button>
-                        <div class="form-success" id="form-success">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12" />
-                            </svg>
-                            Message sent! I'll get back to you within 24 hours.
+                            Send an Email
+                        </a>
+                    </div>
+                    <div class="contact-availability reveal">
+                        <div class="availability-card">
+                            <div class="availability-header">
+                                <span class="badge-dot" aria-hidden="true"></span>
+                                <span>Currently Available</span>
+                            </div>
+                            <p>Open to Ph.D. positions, research collaborations, and project conversations
+                                starting 2026.</p>
+                            <ul class="availability-list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                    Ph.D. research opportunities
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                    Research collaborations in trustworthy AI and AI safety
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                    Applied machine learning projects
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                    LLM security and red-teaming research
+                                </li>
+                            </ul>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer id="footer">
@@ -946,8 +1077,8 @@
                 <div class="footer-logo">JA<span class="accent">.</span></div>
                 <p class="footer-copy">© 2026 Juboraj Ahmed. Designed &amp; Built with ❤️</p>
                 <a href="#hero" class="footer-back-top" aria-label="Back to top">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                         <polyline points="18 15 12 9 6 15" />
                     </svg>
                 </a>

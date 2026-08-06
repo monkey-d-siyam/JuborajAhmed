@@ -1,5 +1,5 @@
 /* =====================================================
-   PORTFOLIO JS — Alex Morgan
+   PORTFOLIO JS — Juboraj Ahmed
    ===================================================== */
 
 'use strict';
@@ -285,76 +285,9 @@ if (prevBtn) {
   });
 }
 
-// Auto-advance (mobile only)
-setInterval(() => {
-  if (window.innerWidth < 900) {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateCarousel();
-  }
-}, 5000);
-
 window.addEventListener('resize', updateCarousel);
 
-// === Contact Form Validation ===
-const contactForm = document.getElementById('contact-form');
-const submitBtn = document.getElementById('submit-btn');
-const formSuccess = document.getElementById('form-success');
-
-function showError(id, msg) {
-  const el = document.getElementById(id + '-error');
-  const input = document.getElementById(id);
-  if (el) el.textContent = msg;
-  if (input) input.classList.add('error');
-}
-function clearError(id) {
-  const el = document.getElementById(id + '-error');
-  const input = document.getElementById(id);
-  if (el) el.textContent = '';
-  if (input) input.classList.remove('error');
-}
-
-['name', 'email', 'message'].forEach(id => {
-  const el = document.getElementById(id);
-  if (el) el.addEventListener('input', () => clearError(id));
-});
-
-contactForm && contactForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  let valid = true;
-
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  clearError('name'); clearError('email'); clearError('message');
-
-  if (!name) { showError('name', 'Please enter your name'); valid = false; }
-  if (!email) {
-    showError('email', 'Please enter your email'); valid = false;
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    showError('email', 'Please enter a valid email'); valid = false;
-  }
-  if (!message || message.length < 10) { showError('message', 'Please enter a message (min 10 characters)'); valid = false; }
-
-  if (!valid) return;
-
-  // Simulate submission
-  submitBtn.disabled = true;
-  submitBtn.querySelector('.btn-text').textContent = 'Sending...';
-
-  await new Promise(r => setTimeout(r, 1800));
-
-  submitBtn.style.display = 'none';
-  formSuccess.classList.add('show');
-  contactForm.reset();
-
-  setTimeout(() => {
-    submitBtn.style.display = '';
-    submitBtn.disabled = false;
-    submitBtn.querySelector('.btn-text').textContent = 'Send Message';
-    formSuccess.classList.remove('show');
-  }, 5000);
-});
+// Contact is handled via mailto: link — no form submission code needed.
 
 // === Fade-in animation for filter ===
 const style = document.createElement('style');
@@ -365,3 +298,4 @@ style.textContent = `
 }
 `;
 document.head.appendChild(style);
+
